@@ -12,16 +12,26 @@ alert(b); // 3
 */
 var a = prompt ("Введи a");
 var b = prompt ("Введи b");
-if ((a>=0) && (b>=0)) {
-	(a - b)
-	console.log ("a & b положительные числа");
-}
-//else if ((a < 0) && (b < 0))
-	//(a + b)
-	console.log ("a & b отрицательные числа");
 
-else (a < 0)
-	console.log ("a & b отрицательные числа");
+
+
+if ((a>=0) && (b>=0)) {
+// (a - b)
+console.log ("a & b положительные числа, разность (a - b): " + (a - b));
+}
+
+
+
+else if ((a < 0) && (b < 0)) { 
+// (a + b)
+console.log ("a & b отрицательные числа, произведение (ab): " + (ab));
+}
+
+
+
+else if (a*b < 0) {
+console.log ("a & b разных знаков числа, сумма (a+b): " + ((+a)+(+b)) );
+}
 
 
 </script>
