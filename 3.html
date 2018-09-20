@@ -12,18 +12,52 @@ while (i <= 10) {
 	console.log(count);
 }
  */
+ //задание 1
+var j, i = 2;
+	for ( j = 2; j < i; j++){
+		if (i % j === 0 ) {
+			break
+		}
+	}
+	if (i == j) {
+		console.log (i);
+	}
+//задание 1 проще	
+var j = 2;
+	i = 2;
 
-simple:
-  for (var i = 2; i <= 100; i++) {
+	function isSimple(i) {
+		for (var j = 2; j < i; j++) {
+			return false;
+		}
+	}
+	return true;
+//Задание 2.
+var basket = [
+	["Холодильник", 100, 3],
+	["Стиралка", 200 , 2],
+	["Печка", 150, 4],
+];
+function countBasketPrise (basket) {
+	var sum = 0;
+	for (var i = 0; i < basket.length; i++) {
+		sum += basket [i][1] * basket [i][2]
+	}
+	return sum;
+}	
+console.log (countBasketPrise(basket));
 
-    for (var j = 2; j < i; j++) {
-      if (i % j == 0) continue simple;
-    }
+//задание 3
+for (i = 0; i <= 9; console.log (i++)) {
 
-    console.log ( i ); // простое
-  }
+}
 
-while 
-//новая записи добавлена
+//Задание 4.
+for (var str ='', i = 0; i < 20; i++) {
+	console.log(str);
+	str += "x";
+	str += "\r\n";
+}
+console.log (str);
 
 </script>
